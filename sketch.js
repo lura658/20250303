@@ -17,7 +17,7 @@ function setup() {
   select.option('請選擇...'); // 添加預設選項
   select.option('淡江大學'); // 添加選項
   select.option('教育科技'); // 添加選項
-  select.option('week3'); // 添加選項
+  select.option('測驗'); // 添加選項
   select.changed(openURL); // 設置選擇列的變更事件
 
   slider = createSlider(25, 60, 40); // 創建一個滑桿，範圍從 25 到 60，初始值為 40
