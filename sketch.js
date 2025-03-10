@@ -29,8 +29,8 @@ function setup() {
   button.mousePressed(toggleJumping); // 設置按鈕的點擊事件
 
   iframe = createElement('iframe'); // 創建 iframe 元素
-  iframe.position((windowWidth - 800) / 2, (windowHeight - 600) / 2); // 設置 iframe 的位置在螢幕正中央
-  iframe.size(1200, 800); // 設置 iframe 的大小
+  iframe.position((windowWidth ) / 2, (windowHeight ) / 2); // 設置 iframe 的位置在螢幕正中央
+  iframe.size(width-200, height-200); // 設置 iframe 的大小
   iframe.hide(); // 初始隱藏 iframe
 }
 
@@ -78,6 +78,7 @@ function openURL() {
   }
   if (url) {
     iframe.attribute('src', url); // 設置 iframe 的 src 屬性為選擇的網址
+    iframe.position((windowWidth - iframe.width) / 2, (windowHeight - iframe.height) / 2); // 調整 iframe 的位置在螢幕正中央
     iframe.show(); // 顯示 iframe
   } else {
     iframe.hide(); // 隱藏 iframe
@@ -86,5 +87,5 @@ function openURL() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight); // 當視窗大小改變時，調整畫布大小
-  iframe.position((windowWidth - 800) / 2, (windowHeight - 600) / 2); // 調整 iframe 的位置在螢幕正中央
+  iframe.position((windowWidth - iframe.width) / 2, (windowHeight - iframe.height) / 2); // 調整 iframe 的位置在螢幕正中央
 }
