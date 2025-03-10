@@ -73,8 +73,8 @@ function openURL() {
     url = 'https://www.tku.edu.tw/';
   } else if (selectedOption === '教育科技') {
     url = 'https://www.et.tku.edu.tw/';
-  } else if (selectedOption === 'week3') {
-    url = 'https://hackmd.io/eYmCwQO3SUKv6MfFeZ3A6w';
+  } else if (selectedOption === '測驗') {
+    url = 'https://lura658.github.io/20250310/';
   }
   if (url) {
     iframe.attribute('src', url); // 設置 iframe 的 src 屬性為選擇的網址
