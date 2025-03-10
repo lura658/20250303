@@ -30,7 +30,7 @@ function setup() {
 
   iframe = createElement('iframe'); // 創建 iframe 元素
   iframe.position((windowWidth - 800) / 2, (windowHeight - 600) / 2); // 設置 iframe 的位置在螢幕正中央
-  iframe.size(800, 600); // 設置 iframe 的大小
+  iframe.size(1200, 800); // 設置 iframe 的大小
   iframe.hide(); // 初始隱藏 iframe
 }
 
